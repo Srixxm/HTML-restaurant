@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <title>Cafe De Craving</title>
+</head>
+<body>
+  <div class="drop_down">
+    <button class="button"><img class="icon" src="C:\Users\Admin\OneDrive\Documents\MERN\restaurant\images.png" alt=""></button>
+    <div class="dd_content">
+       <a href="#" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MENU</a>
+       <a href="#" >RESERVATION</a>
+       <a href="#">ORDER DELIVERY</a>
+       <a href="#">PRIVATE EVENT INQUIRIES</a>
+       <a href="#">CONTACT</a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="C:\Users\Admin\OneDrive\Documents\MERN\restaurant\res2.webp" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="C:\Users\Admin\OneDrive\Documents\MERN\restaurant\res.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="C:\Users\Admin\OneDrive\Documents\MERN\restaurant\res1.webp"style="width:100%">
+      
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <hr style="text-align: center; width: 50%;">
+    <div class="BH">
+      <h3>BUSINESS HOURS</h3>
+      <p>BRUNCH: Monday to Sunday 9:00am - 2:30pm</p>
+      <p>DINNER: Monday to Sunday 5:00pm - 9:00pm</p>
+      <p>CLOSED Tuesdays & Thursday</p>
+      <p>Dine-in, takeout, and delivery available</p>
+      <button class="order">ORDER ONLINE</button>
+    </div>
+    <hr style="text-align: center; width: 50%;">
+    <div>
+    <div class="con">
+      <h3>CONTACT</h3>
+      <p>(+91) 98765 43451</p>
+      <p>cafedecraving@yahoo.com</p>
+      <p>jhfah</p>
+    </div>
+    <div class="info">
+      <h3>LOCATION</h3>
+      <p>177 res road st.</p>
+      <p>Chennai-600 0086</p>
+      <p>India</p>
+    </div>
+  </div>
+  <hr style="text-align: center; width: 50%;">
+  <div class="split">
+  <div class="aboutus">
+    <h3>ABOUT US!</h3>
+    <p>Cafe De Craving strives to source local, sustainable and organic when possible. <br>
+       We work hard to source premium ingredients and we cook everything from <br>
+        scratch with love.  We also do our best to pay our employees living wages <br> 
+        (tips are shared with all employees, including kitchen staff) and to reduce <br> 
+        our environmental footprint wherever we can.but we hope that you find value <br>
+         and feel a sense of comfort in knowing that we aim to get <br>
+         better everyday at doing what is important to us.</p>
+    </div>
+    <div class="dish">
+         <img src="C:\Users\Admin\OneDrive\Documents\MERN\restaurant\dish.png" class="diah" alt="" >
+  </div>
+  </div>
+  <hr style="text-align: center; width: 70%;">
+  <div class="splits">
+   <div class="split1"><img src="C:\Users\Admin\OneDrive\Documents\MERN\restaurant\dish1.jpg" alt="" style="width: 450px; height: 300px;"></div>
+   <div class="split2">
+    <h1>MEET,</h1>
+    <H1>CELEBRATE,</H1>
+    <H1>GATHER.</H1>
+   </div>
+  </div>
+  <
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+</body>
+</html>
+
+

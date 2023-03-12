@@ -1,0 +1,19 @@
+.heading
+{
+    font-family: 'Brush Script MT',cursive;
+    text-align: center;
+    background-color: #ffffff;
+  opacity: 1;
+  
+}
+body
+{
+    font-family: 'Brush Script MT',cursive;
+    background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+h2
+{
+  color: rgb(146, 83, 0);
+}
